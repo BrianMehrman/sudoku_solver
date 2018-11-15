@@ -28,3 +28,9 @@ There are several puzzles in the */puzzles* folder. Some of the puzzles are easy
 ## Resources
 
 [Sudoku Wikipedia](https://en.wikipedia.org/wiki/Sudoku)
+
+## Running code
+
+```
+ruby solver.rb ./puzzles/easy_01.txt
+```
