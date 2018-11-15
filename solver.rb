@@ -11,7 +11,6 @@ class Solver
   def initialize(file)
     @puzzle = []
     load(file)
-    print
   end
 
   def load(file)

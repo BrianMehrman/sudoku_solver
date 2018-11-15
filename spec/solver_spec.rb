@@ -10,8 +10,18 @@ describe Solver do
   end
 
   describe '#validate_cell' do
-    it 'validates the row' do
+    let(:solver) { Solver.new('./puzzles/easy_01.txt') }
 
+    context 'validates the row' do
+      it 'returns `false` with empty cell' do
+        expect(solver.validate_cell(0,0)).to eq(false)
+      end
+
+      it 'returns `false` when row contains same value' do
+        solver.puzzle[0][0] = "6"
+        solver.print
+        expect(solver.validate_cell(0,0)).to eq(false)
+      end
     end
   end
 end
