@@ -31,6 +31,8 @@ There are several puzzles in the */puzzles* folder. Some of the puzzles are easy
 
 ## Running code
 
+![Sudoku Answer](first_pass.gif)
+
 ```
 ruby solver.rb ./puzzles/easy_01.txt
 ```
